@@ -1,0 +1,22 @@
+.modal__closeIcon {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0px;
+}
+
+.modal__copy {
+  display: flex;
+}
+
+.modal__url {
+  padding: 7px 15px 9px 12px;
+  font-size: 16px;
+  background-color: #eee;
+}
+
+.modal__qr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}

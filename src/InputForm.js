@@ -5,13 +5,20 @@ import { Button, CircularProgress } from "@material-ui/core";
 
 import "./InputForm.css";
 import axios from "./axios";
+import TransitionsModal from "./Modal";
 
 function InputForm() {
   const [longURL, setLongURL] = useState("");
   const [shortURL, setShortURL] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   const handleURLChange = (e) => {
+    setShortURL("");
     setLongURL(e.target.value);
+  };
+
+  const handleModalClose = () => {
+    setShowModal(false);
   };
 
   const handleClick = (e) => {
@@ -33,6 +40,7 @@ function InputForm() {
     axios(config)
       .then(function (response) {
         setShortURL(response.data.shortUrl);
+        setShowModal(true);
       })
       .catch(function (error) {
         console.log(error);
@@ -41,6 +49,11 @@ function InputForm() {
 
   return (
     <div className="inputform">
+      <TransitionsModal
+        open={showModal}
+        shortURL={shortURL}
+        handleModalClose={handleModalClose}
+      />
       <form className="inputform__userInput">
         <div className="inputform__longurl">
           <AttachmentIcon />
