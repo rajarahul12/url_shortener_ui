@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import AttachmentIcon from "@material-ui/icons/Attachment";
 import SendIcon from "@material-ui/icons/Send";
-import { Button, CircularProgress } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 
 import "./InputForm.css";
 import axios from "./axios";

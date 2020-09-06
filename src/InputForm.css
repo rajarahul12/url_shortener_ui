@@ -32,7 +32,7 @@
 .inputform__longurl > input {
   border: none;
   outline-width: 0;
-  width: 90%;
+  width: 70%;
   margin-left: 10px;
   font-size: 15px;
   font-weight: 600;
@@ -55,8 +55,18 @@
 .inputform__shorturl > input {
   border: none;
   outline-width: 0;
-  width: 90%;
+  width: 70%;
   margin-left: 10px;
   font-size: 15px;
   font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .inputform__userInput {
+    flex-direction: column;
+  }
+
+  .inputform__longurl {
+    margin-bottom: 20px;
+  }
 }
