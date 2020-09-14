@@ -1,0 +1,42 @@
+.info {
+  display: flex;
+  min-height: 200px;
+}
+
+.info__section {
+  display: flex;
+  flex: 0.5;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__sectionIcon {
+  height: 40px !important;
+  width: 40px !important;
+  margin-right: 30px;
+  color: #4050b5;
+}
+
+.info__sectionDesc {
+  display: flex;
+  flex-direction: column;
+  min-height: 70px;
+  justify-content: space-between;
+  border-left: 2px solid gray;
+  padding-left: 30px;
+}
+
+.info__sectionDesc > h3 {
+  font-size: 30px !important;
+  line-height: 30px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0;
+}
+
+@media (max-width: 400px) {
+  .info {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+}

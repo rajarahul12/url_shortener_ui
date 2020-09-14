@@ -1,11 +1,18 @@
 .inputform {
   background-color: black;
+  background-image: url("./images/back.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 50px;
-  height: 50vh;
+  height: 65vh;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.inputform__header {
+  padding-bottom: 130px;
+  color: white;
 }
 
 .inputform__userInput {
@@ -19,8 +26,8 @@
   align-items: center;
   background-color: white;
   width: 100%;
-  height: 35px;
-  border-radius: 20px;
+  height: 45px;
+  border-radius: 10px;
   margin-right: 10px;
 }
 
@@ -32,10 +39,11 @@
 .inputform__longurl > input {
   border: none;
   outline-width: 0;
-  width: 70%;
+  width: 100%;
   margin-left: 10px;
   font-size: 15px;
   font-weight: 600;
+  outline: none;
 }
 
 .inputform__shorturl {
@@ -43,8 +51,8 @@
   align-items: center;
   background-color: white;
   width: 50vw;
-  height: 35px;
-  border-radius: 20px;
+  height: 45px;
+  border-radius: 10px;
 }
 
 .inputform__shorturl > .MuiSvgIcon-root {
@@ -59,6 +67,14 @@
   margin-left: 10px;
   font-size: 15px;
   font-weight: 600;
+}
+
+.inputform__userInput > button {
+  min-width: 115px;
+}
+
+.MuiCircularProgress-root {
+  color: white !important;
 }
 
 @media (max-width: 700px) {
