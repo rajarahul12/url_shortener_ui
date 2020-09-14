@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AttachmentIcon from "@material-ui/icons/Attachment";
 import MouseIcon from "@material-ui/icons/Mouse";
 
@@ -33,6 +33,7 @@ function Info() {
       .catch(function (error) {
         console.log(error);
       });
+    // eslint-disable-next-line
   }, []);
 
   return (
