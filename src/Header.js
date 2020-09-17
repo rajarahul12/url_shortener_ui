@@ -43,7 +43,7 @@ export default class Header extends React.Component {
       >
         <h2 className="header__brand">URL SHORTENER</h2>
         <Link to="/login" className="header__link">
-          <p className="header__login">LOGIN</p>
+          <p className="header__login"></p>
         </Link>
       </div>
     );
